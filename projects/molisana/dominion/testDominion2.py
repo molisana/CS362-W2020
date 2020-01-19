@@ -6,6 +6,7 @@ Created on Tue Jan 14 14:39:32 2020
 """
 
 import testUtility as refactor
+import Dominion
 
 #Get player names
 player_names = ["Annie","*Ben","*Carla"]
@@ -21,7 +22,7 @@ nC, nV = refactor.numCursesVictory(player_names)
 #Define box
 box = {}
 supply = refactor.getSupply(nV, box)
-box["Chapel"]=[Dominion.Chapel()]*1
+supply["Chapel"]=[Dominion.Chapel()]*1
 
 refactor.addSupplyStandard(supply, player_names, nV, nC)
 
