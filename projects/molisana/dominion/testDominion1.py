@@ -16,9 +16,11 @@ supply_order = {0:['Curse','Copper'],2:['Estate','Cellar','Chapel','Moat'],
                 5:['Duchy','Market','Council Room','Festival','Laboratory','Library','Mine','Witch'],
                 6:['Gold','Adventurer'],8:['Province']}
 
-nC, nV = refactor.numCursesVictory(player_names)
+nV, nC = refactor.numCursesVictory(player_names)
 
-supply = refactor.getSupply(nV)
+#Define box
+box = {}
+supply = refactor.getSupply(nV, box)
 
 refactor.addSupplyStandard(supply, player_names, nV, nC)
 

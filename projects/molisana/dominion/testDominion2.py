@@ -18,7 +18,10 @@ supply_order = {0:['Curse','Copper'],2:['Estate','Cellar','Chapel','Moat'],
 
 nC, nV = refactor.numCursesVictory(player_names)
 
-supply = refactor.getSupply(nV)
+#Define box
+box = {}
+supply = refactor.getSupply(nV, box)
+box["Chapel"]=[Dominion.Chapel()]*1
 
 refactor.addSupplyStandard(supply, player_names, nV, nC)
 

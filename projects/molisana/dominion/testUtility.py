@@ -9,9 +9,7 @@ import Dominion
 import random
 from collections import defaultdict
 
-def getSupply(nV):
-    #Define box
-    box = {}
+def getSupply(nV, box):
     box["Woodcutter"]=[Dominion.Woodcutter()]*10
     box["Smithy"]=[Dominion.Smithy()]*10
     box["Laboratory"]=[Dominion.Laboratory()]*10
